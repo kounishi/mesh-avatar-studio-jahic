@@ -79,7 +79,7 @@ export async function createMeshAvatarImpl(canvas, options) {
     handWeights, handFrame, deformHand, TASSELS } = engine;
   const { Renderer, buildGrid } = createRenderer(engine, rig);
   const { Physics } = createPhysics(engine, rig);
-  const { createSprites } = createSpriteModule(engine, rig);
+  const { createSprites } = createSpriteModule(engine, rig, { halfEyes: options.halfEyes !== false });
   const base = (options.assetsBase ?? '').replace(/\/?$/, '/');
   const asset = (name, build) => {
     if (options.assets) {

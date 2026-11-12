@@ -18,6 +18,8 @@ export interface MeshAvatarOptions {
   fit?: 'contain' | 'cover';
   preserveMouthForm?: boolean;
   lipSync?: LipSyncSettings;
+  /** false: never show the half-closed eye drawing; a partly closed eye shows open or closed. Default true. */
+  halfEyes?: boolean;
 }
 export interface MeshAvatar {
   readonly motions: { id: string; label: string; idle: boolean }[];

@@ -1,6 +1,6 @@
 /** @param {ReturnType<import('./rig.js').createRig>} engine
  * @param {import('../rig/types').Rig} rig */
-export function createSpriteModule(engine, rig) {
+export function createSpriteModule(engine, rig, { halfEyes = true } = {}) {
   const { baseWeights, deformBase, MOUTH } = engine;
   // Drawn eye / mouth variants (built/sprites/, cut from full-size drawings) laid over the
   // face. Closed eyes and open mouths are what the single image does not contain, so instead of
@@ -53,6 +53,8 @@ export function createSpriteModule(engine, rig) {
   const EYE_MOODS_DRAWN = ['sad', 'surprise'];
   function eyeSprite(open, smile, mood = null) {
     if (mood && open >= EYE_CLOSED_MAX) return mood;
+    // Without the half-closed drawing, a partly closed eye shows as open or closed instead.
+    if (!halfEyes) return open >= 0.5 ? null : smile >= 0.5 ? 'eyes_smile' : 'eyes_closed';
     if (open >= EYE_OPEN_MIN) return null;
     if (open < EYE_CLOSED_MAX) return smile >= 0.5 ? 'eyes_smile' : 'eyes_closed';
     return 'eyes_half';
