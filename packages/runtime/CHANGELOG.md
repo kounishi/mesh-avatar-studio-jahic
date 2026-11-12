@@ -1,5 +1,11 @@
 # mesh-avatar
 
+## 0.5.0
+
+### Minor Changes
+
+- 7d898a7: Add the `halfEyes: false` option to `createMeshAvatar` to show eyes only open or closed, never half-closed.
+
 ## 0.4.0
 
 ### Minor Changes
