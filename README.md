@@ -2,6 +2,12 @@
 
 [日本語](README.ja.md) · [简体中文](README.zh.md)
 
+> **This is a modified version** of [shinshin86/mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio)
+> (MIT License). It adds lip-synced video export from a voice file (`npm run render-lipsync`),
+> two-speaker dialogue timing (`tools/join-lines.py`, `--timeline`) and the `--no-half-eyes`
+> option. Everything else is the original project; please report issues that also occur in
+> the original there.
+
 Turn a single illustration into an animated 2D mesh avatar: it blinks, talks, turns its head,
 breathes and sways its hair. A coding agent prepares the avatar from your image; you fine-tune
 it in a local editor with a live preview.

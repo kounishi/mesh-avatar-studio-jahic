@@ -2,6 +2,11 @@
 
 [English](README.md) · [简体中文](README.zh.md)
 
+> **これは [shinshin86/mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio)（MIT ライセンス）の改造版です。**
+> 音声ファイルからの口パク動画の書き出し（`npm run render-lipsync`）、2人の掛け合い用のタイミング指定
+> （`tools/join-lines.py`、`--timeline`）、`--no-half-eyes` オプションを追加しています。それ以外は元のプロジェクトのままです。
+> 元のプロジェクトでも起きる問題は、元のリポジトリに報告してください。
+
 1枚のイラストから、まばたき・口パク・首振り・呼吸・髪の揺れをする 2D メッシュアバターを作るツールです。アバターの作成はコーディングエージェントが行い、細かい調整はプレビューを見ながらローカルのエディタで行います。
 
 実際に動く様子は[紹介ページ](https://shinshin86.github.io/mesh-avatar-studio/ja/)で見られます。

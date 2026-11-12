@@ -2,6 +2,10 @@
 
 [English](README.md) · [日本語](README.ja.md)
 
+> **这是 [shinshin86/mesh-avatar-studio](https://github.com/shinshin86/mesh-avatar-studio)（MIT 许可证）的修改版。**
+> 新增了根据语音文件导出口型同步视频（`npm run render-lipsync`）、双人对话的时间轴（`tools/join-lines.py`、`--timeline`）
+> 以及 `--no-half-eyes` 选项。其余部分与原项目相同；原项目中同样存在的问题请向原仓库报告。
+
 让一张插画变成会动的 2D 网格虚拟形象：它会眨眼、说话、转头、呼吸、头发自然摆动。虚拟形象由编程助手根据你的插画生成，之后你在本地编辑器里配合实时预览微调动作。
 
 在[项目主页](https://shinshin86.github.io/mesh-avatar-studio/)可以看到动起来的效果。
